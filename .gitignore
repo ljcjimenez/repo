@@ -1,2 +1,37 @@
-*.pyc
+# --- SEGURIDAD (CRÍTICO) ---
+# Llaves de acceso de AWS y Azure (nunca subir al repo)
+*.csv
+*.pub
+mi-llave-aws
+credentials
+.azure/
+.aws/
+
+# --- INFRAESTRUCTURA (PULUMI) ---
+# Archivos de estado y configuración local
+.pulumi/
+state.json
+Pulumi.*.yaml
+!Pulumi.yaml
+
+# --- LENGUAJE (PYTHON) ---
+# Entornos virtuales y caché
+__pycache__/
+*.py[cod]
+*$py.class
 venv/
+.env
+
+# --- ARCHIVOS TEMPORALES Y BASURA ---
+# Archivos de Office (Word/Excel) y temporales del sistema
+~$*.docx
+~*.tmp
+.DS_Store
+Thumbs.db
+
+# --- TESIS / VIDEOJUEGOS VR ---
+# Si usas motores como Unity o Unreal, ignora los temporales
+[Bb]in/
+[Oo]bj/
+[Ll]ibrary/
+[Tt]emp/
